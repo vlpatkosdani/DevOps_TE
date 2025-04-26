@@ -24,6 +24,10 @@ jobs:
       - name: Run a Best Practice Analysis
         shell: cmd
         run: TabularEditor.exe .\AdventureWorks -A -G
+
+      - name: Run custom script
+        shell: cmd
+        run: TabularEditor.exe .\AdventureWorks -S ".\Scripts\test_script.csx"
 #
 #      - name: Perform data source schema scheck
 #        shell: cmd
